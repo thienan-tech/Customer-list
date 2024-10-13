@@ -1,4 +1,6 @@
 import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import {
     getCustomers,
     getCustomerById,
@@ -9,9 +11,14 @@ import {
 
 const app = express();
 const port = 8080;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Middleware to parse JSON request bodies
 app.use(express.json());
+
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // GET /customers
 app.get('/customers', (req, res) => {
@@ -68,6 +75,11 @@ app.delete('/customers/:id', (req, res) => {
             res.json(deletedCustomer);
         }
     });
+});
+
+// Serve the customer management page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'customers', 'index.html'));
 });
 
 app.listen(port, () => {
