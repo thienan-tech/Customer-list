@@ -1,0 +1,8 @@
+<h1 class="mb-4">Xóa Khách Hàng</h1>
+
+<p>Bạn có chắc chắn muốn xóa khách hàng "<%= customer.ten_kh %>" không?</p>
+
+<form action="/customers/<%= customer.id %>/delete" method="post">
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a href="/customers" class="btn btn-secondary">Hủy</a>
+</form>
