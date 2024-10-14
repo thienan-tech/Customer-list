@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container my-5">
+    <h1>Invoice Details</h1>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Invoice ID: <%= invoice.id %></h5>
+            <p class="card-text">Customer Code: <%= invoice.ma_kh %></p>
+            <p class="card-text">Total Order: <%= invoice.tong_dh %></p>
+            <p class="card-text">Receivables: <%= invoice.cong_no %></p>
+            <p class="card-text">Invoice Code: <%= invoice.ma_hd %></p>
+        </div>
+    </div>
+
+    <h2 class="mt-5">Invoice Details</h2>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Order ID</th>
+            <th>Material Code</th>
+            <th>Material Name</th>
+            <th>Unit</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+            <th>Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- Populate the invoice details table -->
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

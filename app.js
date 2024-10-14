@@ -8,6 +8,19 @@ import {
     updateCustomer,
     deleteCustomer
 } from './models/customerModel.js';
+import {
+    getInvoices,
+    getInvoiceById,
+    createInvoice,
+    updateInvoice,
+    deleteInvoice
+} from './models/invoiceModel.js';
+import {
+    getInvoiceDetails,
+    createInvoiceDetail,
+    updateInvoiceDetail,
+    deleteInvoiceDetail
+} from './models/invoiceDetailsModel.js';
 
 const app = express();
 const port = 8080;
@@ -20,7 +33,7 @@ app.use(express.json());
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-// GET /customers
+// Customer routes
 app.get('/customers', (req, res) => {
     getCustomers((error, customers) => {
         if (error) {
@@ -31,7 +44,6 @@ app.get('/customers', (req, res) => {
     });
 });
 
-// GET /customers/:id
 app.get('/customers/:id', (req, res) => {
     getCustomerById(req.params.id, (error, customer) => {
         if (error) {
@@ -44,7 +56,6 @@ app.get('/customers/:id', (req, res) => {
     });
 });
 
-// POST /customers
 app.post('/customers', (req, res) => {
     createCustomer(req.body, (error, newCustomer) => {
         if (error) {
@@ -55,7 +66,6 @@ app.post('/customers', (req, res) => {
     });
 });
 
-// PUT /customers/:id
 app.put('/customers/:id', (req, res) => {
     updateCustomer(req.params.id, req.body, (error, updatedCustomer) => {
         if (error) {
@@ -66,13 +76,106 @@ app.put('/customers/:id', (req, res) => {
     });
 });
 
-// DELETE /customers/:id
 app.delete('/customers/:id', (req, res) => {
     deleteCustomer(req.params.id, (error, deletedCustomer) => {
         if (error) {
             res.status(500).json({ error: error.message });
         } else {
             res.json(deletedCustomer);
+        }
+    });
+});
+
+// Invoice routes
+app.get('/invoices', (req, res) => {
+    getInvoices((error, invoices) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+        } else {
+            res.json(invoices);
+        }
+    });
+});
+
+app.get('/invoices/:id', (req, res) => {
+    getInvoiceById(req.params.id, (error, invoice) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+        } else if (!invoice) {
+            res.status(404).json({ error: 'Invoice not found' });
+        } else {
+            res.json(invoice);
+        }
+    });
+});
+
+app.post('/invoices', (req, res) => {
+    createInvoice(req.body, (error, newInvoice) => {
+        if (error) {
+            res.status(400).json({ error: error.message });
+        } else {
+            res.status(201).json(newInvoice);
+        }
+    });
+});
+
+app.put('/invoices/:id', (req, res) => {
+    updateInvoice(req.params.id, req.body, (error, updatedInvoice) => {
+        if (error) {
+            res.status(400).json({ error: error.message });
+        } else {
+            res.json(updatedInvoice);
+        }
+    });
+});
+
+app.delete('/invoices/:id', (req, res) => {
+    deleteInvoice(req.params.id, (error, deletedInvoice) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+        } else {
+            res.json(deletedInvoice);
+        }
+    });
+});
+
+// Invoice details routes
+app.get('/invoices/:invoiceId/details', (req, res) => {
+    getInvoiceDetails(req.params.invoiceId, (error, invoiceDetails) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+        } else {
+            res.json(invoiceDetails);
+        }
+    });
+});
+
+app.post('/invoices/:invoiceId/details', (req, res) => {
+    createInvoiceDetail(req.params.invoiceId, req.body, (error, newInvoiceDetail) => {
+        if (error) {
+            res.status(400).json({ error: error.message });
+        } else {
+            res.status(201).json(newInvoiceDetail);
+        }
+    });
+});
+
+app.put('/invoices/:invoiceId/details/:id', (req, res) => {
+    updateInvoiceDetail(req.params.invoiceId, req.params.id, req.body, (error, updatedInvoiceDetail) => {
+        if (error) {
+            res.status(400).json({ error: error.message });
+        } else {
+            res.json(updatedInvoiceDetail);
+        }
+    });
+});
+
+app.delete('/invoices/:invoiceId/details/:id', (req, res) => {
+    deleteInvoiceDetail(req.params.invoiceId, req.params.id, (error, deletedInvoiceDetail) => {
+        if (error) {
+            res.status(500).json({ error: error.message });
+        } else {
+            res.json(deletedInvoiceDetail);
         }
     });
 });
