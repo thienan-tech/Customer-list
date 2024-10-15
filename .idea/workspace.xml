@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c0a35215-3041-42ff-b2f0-1214e7fc33e6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Customer-List/views/invoices/details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer-List/views/invoices/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/backend/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/Customers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/DataTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/components/invoices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/controllers/CustomerController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/controllers/apiController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/controllers/productController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/models/customer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/models/invoice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/models/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/pages/Customers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/pages/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/pages/Invoices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/pages/Products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/routers/AppRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/routes/AppRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/routes/apiRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/routes/customerRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/routes/productRoutes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer-List/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/Customer-List/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer-List/models/invoiceDetailsModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Customer-List/models/invoiceDetailsModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer-List/views/customers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Customer-List/views/customers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/src/service-worker.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Customer-List" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/New folder/Demo/src/package.json" />
+    <dismissed value="$PROJECT_DIR$/New folder/qlbh_vlxaydung/package.json" />
+    <dismissed value="$PROJECT_DIR$/New folder/quanlybanhang/quanlybanhang_vlxd/backend/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nI4AXfRwRhaC4BVZ14n4LujdMb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.App.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.Server.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.app.js (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.app.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.server.js (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.server.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.16.11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project Nodejs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project Nodejs\Demo\src" />
+      <recent name="D:\Project Nodejs\Demo\src\routes" />
+      <recent name="D:\Project Nodejs\Demo\src\controllers" />
+      <recent name="D:\Project Nodejs\Demo\src\models" />
+      <recent name="D:\Project Nodejs\quanlybanhang\quanlybanhang_vlxd\src\pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Project Nodejs/Customer-List/views/price-list/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Customer-List/app.js" working-dir="$PROJECT_DIR$/Customer-List">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0a35215-3041-42ff-b2f0-1214e7fc33e6" name="Changes" comment="" />
+      <created>1728647112875</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728647112875</updated>
+      <workItem from="1728647113886" duration="3736000" />
+      <workItem from="1728651944510" duration="1947000" />
+      <workItem from="1728654376395" duration="42000" />
+      <workItem from="1728654435887" duration="5000" />
+      <workItem from="1728654452860" duration="6894000" />
+      <workItem from="1728662264352" duration="694000" />
+      <workItem from="1728701405686" duration="15747000" />
+      <workItem from="1728743190976" duration="6476000" />
+      <workItem from="1728788726772" duration="204000" />
+      <workItem from="1728833866066" duration="5455000" />
+      <workItem from="1728862922104" duration="13822000" />
+      <workItem from="1728911274116" duration="302000" />
+      <workItem from="1728911628651" duration="13769000" />
+      <workItem from="1728927293470" duration="5525000" />
+      <workItem from="1728949369554" duration="3366000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

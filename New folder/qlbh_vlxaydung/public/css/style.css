@@ -1,0 +1,44 @@
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.project-info h1 {
+    font-size: 1.5rem;
+}
+
+.auth-actions a {
+    margin-right: 0.5rem;
+}
+
+.search-form input,
+.search-form button {
+    font-size: 0.9rem;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #343a40;
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}

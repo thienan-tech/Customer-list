@@ -1,0 +1,110 @@
+Trien khai ứng dụng MVC trên nền tảng nodejs, mysql, bootstrap, es module, react, ejs, env.
+- Bao gồm các trang: Hóa đơn bán hàng, quản lý khách hang, bảng giá.
+- CSDL tên QLBH_vatlieuxaydung, gồm các bảng: Khachhang, banggia, hoadon, ct_hoadon. tạo ràng buộc các bảng.
+- Tạo layout chung cho các trang: header(thông tin dự án, đăng nhập, đăng xuất, tìm kiếm, 100%) , siderbar bên trái(menu, 20%, đổ màu xanh đậm, chữ đen, đóng khung tab cho các trang), footer (cùng màu vs header. 100%)
+- tạo trang đăng nhập, trỏ về trang home dạng blog.
+- tạo lệnh query tạo bảng csdl.
+- tạo cây thư mục, file bằng cmd.
+- bảng hóa đơn gồm: 
++ danh mục hóa đơn: STT, Mã KH, TÊN KHÁCH HÀNG, TỔNG HÓA ĐƠN, TỔNG ĐƠN HÀNG, CÔNG NỢ.thêm nút tìm kiếm, thêm, sửa, xóa hóa đơn.
++ chi tiết hóa đơn: liên kết với mã khách hàng, hiển thị các hóa đơn đã tạo, dạng rút gọn. gồm các cột: stt, mã vật tư, tên vật tư, đơn vị tính, số lợng, đơn giá, thành tiền, ghi chú. dòng tổng dưới cùng. bo sung các nút thêm, sửa, xóa sản phẩm, in
+- trang bảng giá: gồm nút tìm kiếm, thêm, sửa, xóa sản pham, bảng hiển thị sản phẩm dạng trang. gồm các cột: stt, tên vật tư, đơn vị tính, đơn giá, khối lợng tồn.
+- trang khách hàng: gồm nút tìm kiếm, thêm, sửa, xóa. hiển thị dạng bảng, các cột: stt, mã kh, tên khách hàng, sđt, địa chỉ, email, ngày sinh.
+
+-> phân tích dự án trên
+các trường đơn giá, thành tiền, số lợng, tổng cong dịnh dạng ###,###
+nhập dữ liệu mẫu cho các bảng.
++ bảng khách hàng 20 bản ghi.
++ bảng hóa đơn mỗi khách hàng 3 bản ghi.
++ bảng giá là vật liệu xây dựng. gồm 30 bản ghi, đơn vị VNĐ, ###,###
+sửa lại cấu trúc csdl, bổ sung khóa ngoại, bỏ ma_hod
+viết lại cấu trúc bảng csdl\
+cập nhật lại cấu trúc csdl:
++ bảng banggia gồm: id, ma_vtu, ten_vtu,dvt, don_gia, kl_ton.
++ bảng hoadon gồm: id, ma_kh, ten_kh, tong_dh,cong_no, ma_hd.
++ bang ct_hoadon gồm: id, ma_dh, ma_vtu, ten_vtu,dvt, so_luong, don_gia, thanh_tien, ghi_chu.
++ bảng khachhang: id, ma_kh, ten_kh, sdt, dia_chi,email, ngaysinh.
+- ct hóa đơn lên ket với bảng giá thông qua ma_vt.
+- hoadon liên kết v ới ct_hoadon thông qua ma_hd, liên kết voi khachhang thôg qua ma_kh.
+thêm dữ lieu mẫu cho bảng giá và mã khách hang gồm 20 bản ghi. bảng hoadon moi khach hang ngẫu nhiên b ảnghi.
+tạo csdl mới tên qlbh_vlxaydung, phân tích dự án
+sửa lại cấu trúc bảng khách hàng và banggia
+sửa dvt theo tính chất vật tư bảng ct_hoadon
+dùng postman test csdl thêm hóa đơn mới.
+cập nhật csdl, user, password, database cho postman
+truy cập trực tiếp csdl
+tạo cây thư mục, file bằng cmd. viết lại chương trình bổ sung api và chức năng cho các nút.
+bổ sung các api homeController và invoiceController
+CREATE TABLE khachhang (  
+  id INT AUTO_INCREMENT PRIMARY KEY,  
+  ma_kh VARCHAR(50) UNIQUE NOT NULL,  
+  ten_kh VARCHAR(100) NOT NULL,  
+  sdt VARCHAR(15) NOT NULL,  
+  dia_chi VARCHAR(255) NOT NULL,  
+  email VARCHAR(100) NOT NULL,  
+  ngaysinh DATE NOT NULL  
+);  
+
+CREATE TABLE banggia (  
+  id INT AUTO_INCREMENT PRIMARY KEY,  
+  ma_vtu VARCHAR(50) UNIQUE NOT NULL,  
+  ten_vtu VARCHAR(100) NOT NULL,  
+  dvt VARCHAR(20) NOT NULL,  
+  don_gia DECIMAL(15, 2) NOT NULL,  
+  kl_ton INT NOT NULL  
+);  
+
+CREATE TABLE hoadon (  
+  id INT AUTO_INCREMENT PRIMARY KEY,  
+  ma_kh VARCHAR(50) NOT NULL,  
+  tong_dh DECIMAL(15, 2) NOT NULL,  
+  cong_no DECIMAL(15, 2) NOT NULL,  
+  ma_hd VARCHAR(50) NOT NULL,  
+  FOREIGN KEY (ma_kh) REFERENCES khachhang(ma_kh)  
+);  
+
+CREATE TABLE ct_hoadon (  
+  id INT AUTO_INCREMENT PRIMARY KEY,  
+  ma_dh INT NOT NULL,  
+  ma_vtu VARCHAR(50) NOT NULL,  
+  ten_vtu VARCHAR(100) NOT NULL,  
+  dvt VARCHAR(20) NOT NULL,  
+  so_luong INT NOT NULL,  
+  don_gia DECIMAL(15, 2) NOT NULL,  
+  thanh_tien DECIMAL(15, 2) NOT NULL,  
+  ghi_chu VARCHAR(255),  
+  FOREIGN KEY (ma_vtu) REFERENCES banggia(ma_vtu),  
+  FOREIGN KEY (ma_dh) REFERENCES hoadon(id)  
+);
+
+qlbh_vatlieuxaydung/  
+├── config/  
+│   └── db.js  
+├── controllers/  
+│   ├── homeController.js  
+│   ├── invoiceController.js  
+│   ├── customerController.js  
+│   └── priceListController.js  
+├── models/  
+│   ├── Invoice.js  
+│   ├── Customer.js  
+│   └── PriceList.js  
+├── routes/  
+│   ├── homeRoutes.js  
+│   ├── invoiceRoutes.js  
+│   ├── customerRoutes.js  
+│   └── priceListRoutes.js  
+├── views/  
+│   ├── layouts/  
+│   │   └── main.ejs  
+│   ├── home.ejs  
+│   ├── invoice.ejs  
+│   ├── customer.ejs  
+│   └── priceList.ejs  
+├── public/  
+│   ├── css/  
+│   │   └── style.css  
+│   └── js/  
+│       └── script.js  
+├── app.js  
+└── package.json

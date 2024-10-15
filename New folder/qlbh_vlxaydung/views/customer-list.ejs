@@ -1,0 +1,28 @@
+<h1>Customers</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Birthday</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% var customers;
+    customers.forEach(customer => { %>
+        <tr>
+            <td><%= customer.id %></td>
+            <td><%= customer.ma_kh %></td>
+            <td><%= customer.ten_kh %></td>
+            <td><%= customer.sdt %></td>
+            <td><%= customer.dia_chi %></td>
+            <td><%= customer.email %></td>
+            <td><%= customer.ngaysinh %></td>
+        </tr>
+    <% }) %>
+    </tbody>
+</table>

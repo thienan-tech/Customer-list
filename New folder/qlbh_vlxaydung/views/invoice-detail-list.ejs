@@ -1,0 +1,31 @@
+<h1>Invoice Details</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Order ID</th>
+        <th>Material Code</th>
+        <th>Material Name</th>
+        <th>Unit</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Amount</th>
+        <th>Note</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% invoiceDetails.forEach(detail => { %>
+        <tr>
+            <td><%= detail.id %></td>
+            <td><%= detail.ma_dh %></td>
+            <td><%= detail.ma_vtu %></td>
+            <td><%= detail.ten_vtu %></td>
+            <td><%= detail.dvt %></td>
+            <td><%= detail.so_luong %></td>
+            <td><%= detail.don_gia %></td>
+            <td><%= detail.thanh_tien %></td>
+            <td><%= detail.ghi_chu %></td>
+        </tr>
+    <% }) %>
+    </tbody>
+</table>

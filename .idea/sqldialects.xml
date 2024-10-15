@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Customer-List/models/customerModel.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Customer-List/models/invoiceDetailsModel.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Customer-List/models/invoiceModel.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/models/invoiceDetailsModel.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/models/invoiceModel.js" dialect="GenericSQL" />
+  </component>
+</project>

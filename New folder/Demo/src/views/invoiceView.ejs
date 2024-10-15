@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hóa Đơn</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container my-5">
+    <h1>Danh Sách Hóa Đơn</h1>
+    <table class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Mã Khách Hàng</th>
+            <th>Tổng Đơn Hàng</th>
+            <th>Công Nợ</th>
+            <th>Mã Hóa Đơn</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% invoices.forEach(invoice => { %>
+            <tr>
+                <td><%= invoice.id %></td>
+                <td><%= invoice.customerCode %></td>
+                <td><%= invoice.totalOrder %></td>
+                <td><%= invoice.debt %></td>
+                <td><%= invoice.code %></td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

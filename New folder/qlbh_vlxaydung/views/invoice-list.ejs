@@ -1,0 +1,23 @@
+<h1>Invoices</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Customer Code</th>
+        <th>Total Order</th>
+        <th>Receivables</th>
+        <th>Invoice Code</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% invoices.forEach(invoice => { %>
+        <tr>
+            <td><%= invoice.id %></td>
+            <td><%= invoice.ma_kh %></td>
+            <td><%= invoice.tong_dh %></td>
+            <td><%= invoice.cong_no %></td>
+            <td><%= invoice.ma_hd %></td>
+        </tr>
+    <% }) %>
+    </tbody>
+</table>

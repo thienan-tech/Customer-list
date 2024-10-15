@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Demo/src/models/Customer.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Demo/src/models/Invoice.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Demo/src/models/InvoiceDetail.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Demo/src/models/PriceList.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/qlbh_vlxaydung/controllers/customerController.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/qlbh_vlxaydung/controllers/homeController.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/qlbh_vlxaydung/controllers/invoiceController.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/qlbh_vlxaydung/controllers/invoiceDetailController.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/qlbh_vlxaydung/controllers/priceListController.js" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/quanlybanhang/quanlybanhang_vlxd/backend/server.js" dialect="GenericSQL" />
+  </component>
+</project>

@@ -1,0 +1,25 @@
+<h1>Price List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Unit</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% priceLists.forEach(priceList => { %>
+        <tr>
+            <td><%= priceList.id %></td>
+            <td><%= priceList.ma_vtu %></td>
+            <td><%= priceList.ten_vtu %></td>
+            <td><%= priceList.dvt %></td>
+            <td><%= priceList.don_gia %></td>
+            <td><%= priceList.kl_ton %></td>
+        </tr>
+    <% }) %>
+    </tbody>
+</table>
